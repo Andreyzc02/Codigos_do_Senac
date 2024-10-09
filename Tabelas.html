@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+   <head> 
+        <meta charset="utf-8"> 
+        <title>Tabelas</title> 
+   </head>
+   <body> 
+    <h1>Trabalhando com tabelas</h1>
+    <p>No HTML os dados tabulares são aqueles que podem ser representados visualmente em forma de tabela.</p>
+    <p>A elaboração de uma tabela consiste em uma combinação de linhas e colunas, resultando em uma forma objetiva e ordenada de expor as informações.</p>
+    <h2>Tabela Simples:</h2> 
+
+    <!--tr = é definido como linha-->
+    <!--td = é definido como célula-->
+    <table border="1"> 
+        <tr> 
+            <td>Violão</td>
+            <td>Guitarra</td>
+        </tr>
+        <tr>
+            <td>Violino</td>
+            <td>Piano</td>
+        </tr>
+    </table> 
+
+    <h2>Tabela com célula de Título:</h2>
+
+    <table border="1">
+        <tr> 
+        <th>Imstrumentos de corda</th>
+        <th>Instrumentos de sopro</th> 
+        <th>Iconis</th>
+        </tr> 
+        <tr>
+            <td>Violino</td>
+            <td>Flauta</td> 
+            <td>&#99812;</td>
+        </tr> 
+        <tr>
+            <td>Piano</td>
+            <td>Corneta</td> 
+            <td> &#99813; </td>
+        </tr>
+    </table> 
+    <h2>Cabeçalho, corpo e rodape da tabela</h2>
+    <p>Estes elementos criam seções dentro da tabela que podem receber uma formatação diferenciada, útil para a formatação de tabelas com muitos dados.</p>
+    <table border="1">
+        <caption>Tabela thead/tfoot/tbody</caption> 
+        <thead>
+            <tr> 
+                <th colspan="2">Coluna1</th>
+                <th>Coluna2</th>
+                <!--<th>Coluna3</th>-->
+            </tr>
+        </thead>
+        <tfoot>
+            <tr> 
+                <td>Resultado1</td>
+                <td>Resultado2</td>
+                <td>Resultado3</td>
+            </tr>
+        </tfoot> 
+        <tbody>
+            <tr> 
+                <td>Coluna a</td>
+                <td>Coluna b</td>
+                <td>Coluna c</td>
+            </tr> 
+            <tr> 
+                <td>Coluna d</td>
+                <td>Coluna e</td>
+                <td>Coluna f</td>
+            </tr>
+        </tbody>
+    </table> 
+    <table border="1"> 
+        <!-- Permite colocar uma legenda ou título na tabela --> 
+        <caption>Tabela thead/tfoot/tbody</caption> 
+        <thead> 
+            <tr> 
+                <!-- colspan - quantidade de colunas que serão mesclados -->
+                <th colspan="2">Coluna1</th>
+            </tr>
+        </thead>
+    </table>
+
+   </body>
+</html>
