@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario=Number(prompt("Informe seu sálario"))
+        let salarioNovo, aumento, porcentagem
+
+        
+        if (salario<280)
+        {
+            (porcentagem=20/100)
+        }
+        else if (salario>=280 & salario<=700)
+        {
+            (porcentagem=15/100)
+        }
+        else if (salario>=700 & salario<=1500)
+        {
+            (porcentagem=10/100)
+        }
+        else
+        {
+            (porcentagem=5/100)
+        }
+        
+        aumento=salario*porcentagem
+        salarioNovo=salario+aumento
+        
+                // substituímos o document.write por alert
+                // substituímos o <br> por \n
+
+                alert(`Salário antes do aumento: R$${salario.toFixed(2)}\nPercentual de aumento: ${porcentagem*100}%\nValor do aumento: R$${aumento.toFixed(2)}\nNovo salário R$${salarioNovo}`)
+
+                //document.write(`Salário antes do aumento: R$${salario.toFixed(2)}<br>Percentual de aumento: ${porcentagem*100}%<br>Valor do aumento: R$${aumento.toFixed(2)}<br>Novo salário R$${salarioNovo}`)
+
+    </script>
+</body>
+</html>

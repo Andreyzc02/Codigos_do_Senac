@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cliente=prompt("Nome do cliente")
+        let valor=Number(prompt("Valor da compra"))
+        let desconto
+
+        if(valor<1000)
+        {
+            desconto=5/100*valor
+        }
+        else if (valor>=1000 && valor<=5000)
+        {
+            desconto=10/100*valor
+        }
+        else
+        {
+            desconto=15/100*valor
+        }
+        document.write(`Cliente ${cliente} comprou o total de ${valor.toFixed(2)} e teve um desconto no valor de R$${valor.toFixed(2)} restando pagar R$${desconto.toFixed(2)}`)
+    </script>
+</body>
+</html>

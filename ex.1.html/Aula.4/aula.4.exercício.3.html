@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let dataAtual, mes, mesExtenso
+        dataAtual = new Date()
+        //new instânciando na memória um objeto Date()
+        //Instânciar = criar uma cópia
+        mes = dataAtual.getMonth(+1)
+        //Estamos somando +1 pois o mês de janeiro é o mês 0 e o mês de dezembro o mês 11
+        // swich case?
+        switch (mes) {//CAso mês=1
+            case 1:
+                mesExtenso = "janeiro"
+                break
+            case 2:
+                mesExtenso = "Fevereiro"
+                break
+            case 3:
+                mesExtenso = "Março"
+                break
+            case 4:
+                mesExtenso = "Abril"
+                break
+            case 5:
+                mesExtenso = "Maio"
+                break
+            case 6:
+                mesExtenso = "Junho"
+                break
+            case 7:
+                mesExtenso = "Julho"
+                break
+            case 8:
+                mesExtenso = "Agosto"
+                break
+            case 9:
+                mesExtenso = "Setembro"
+                break
+            case 10:
+                mesExtenso = "Outubro"
+                break
+            case 11:
+                mesExtenso = "Novembre"
+                break
+            case 12:
+                mesExtenso = "Dezembro"
+                break
+            default:
+                mesExtenso = "Mês invalido"
+        }
+        
+        document.write("Mês = "+mesExtenso)
+    </script>
+</body>
+
+</html>

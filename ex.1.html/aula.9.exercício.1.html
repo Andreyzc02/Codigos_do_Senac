@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declarando array
+        let cores=["Azul","Amarelo","Vermelho","Verde"]
+        //Posições:4
+        //Índice: 0--->3
+        document.write(cores[0]+"<br>")
+        document.write(cores[2]+"<br><br>")
+        //Estrutura de repetição
+        for (let i=0;i<=3;i++)
+        {
+            document.write(cores[i]+" - ")
+        }
+        document.write("<br>")
+        //subistitua a cor verde por violeta
+        cores[3]="Violeta"
+        for (let i=0;i<=3;i++)
+        {
+            document.write(cores[i]+" - ")
+        }
+        // Imprimir o tamanho do array=vetor
+        //Propiedade length
+        document.write("<br>"+cores.length+"<br>")
+        //Insira uma nova cor 
+        cores.push("Marrom")
+        cores.push("Cinza")
+        cores.push("Ciano")
+        cores.pop()//Execluir o último elemento
+        document.write("<br>"+cores.length+"<br>")
+        cores.sort()//Classifica em ordem alfabética crescente
+        // Ordem alfabética decrescente [cores.reverse()]
+        for (let i=0;i<=cores.length-1;i++)
+        {
+            document.write(cores[i]+" * ")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sexo=Number(prompt("Digite (1) -Para M e (2) -Para F"))
+        let altura=Number(prompt("Digite a altura"))
+        let peso 
+        if (sexo==1)
+        { peso=(72.7*altura)-58
+            document.write(`O peso ideal é ${peso.toFixed(1)}`)
+        }
+        else if (sexo==2)
+        { peso=(62.1*altura)-44.7
+            document.write(`O peso ideal é ${peso.toFixed(1)}`)
+        }
+        else
+        {
+            document.write("Opção INCORRETA")
+        }
+    </script>
+</body>
+</html>

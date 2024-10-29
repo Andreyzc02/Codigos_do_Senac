@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //Usuário deverá digitar um número de 1 a 7, sendo que 1 é domingo.....Utilizando switch monstrar o dia da semana por extenso
+         let dia, diaExtenso
+         dia=Number(prompt("Digite o dia da semana usando números"))
+         switch (dia)
+         {
+            case 1:
+                diaExtenso="Domingo"
+                break
+            case 2:
+                diaExtenso="Segunda-Feira"
+                break
+            case 3:
+                diaExtenso="Terça-Feira"
+                break
+            case 4:
+                diaExtenso="Quarta-Feira"
+                break
+            case 5:
+                diaExtenso="Quinta-Feira"
+                break
+            case 6:
+                diaExtenso="Sexta-Feira"
+                break
+            case 7:
+                diaExtenso="Sábado"
+                break
+            case 8:
+                diaExtenso="Dia invalido"
+                break
+         }
+         document.write("Dia ="+diaExtenso)
+    </script>
+</body>
+</html>

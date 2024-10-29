@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1, n2 ,n3, exercicio, media
+        n1=Number(prompt(""))
+        n2=Number(prompt(""))
+        n3=Number(prompt(""))
+        exercicio=Number(prompt(""))
+        media= (n1+n2*2+n3*3+exercicio)/7
+        if (media>=9)
+        {
+            document.write("Conceito: A")
+        }
+        else if (media<9.0 && media>=7.5)
+        {
+            document.write("Conteito: B")
+        }
+        else if (media>=6.0 && media<7.5)
+        {
+            document.write("Conceito: C")
+        }
+        else{
+            document.write("Conceito: D")
+        }
+    </script>
+</body>
+</html>

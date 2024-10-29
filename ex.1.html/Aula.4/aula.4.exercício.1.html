@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Calcular a média de 2 notas e classificar o aluno como reprovado (média acima de 6.9), reprovado (abaixo de 4), recuperação (entre a 4 inclusive e 6.9 inclusive)-->
+    <script>
+        // Abaixo o modo que tentei fazer sozinho (observação: funcionou prefeitamente)
+        /*let n1, n2, no1
+        n1=Number(prompt("Digite sua nota"))
+        n2=Number(prompt("Digite sua nota"))
+        no1= (n1+n2)/2
+        if (no1>=7)
+        { 
+
+            document.write("Você foi Aprovado")
+        }
+        else if(no1<=6.9 && no1>=4)
+        {
+            document.write("Recuperação")
+        }
+        else 
+        {
+            document.write("Reprovado")
+        }*/
+        // Abaixo é o modo que fiz com a professora, assim copiando a lição que foi passada
+        let nota1, nota2, media
+        nota1=Number(prompt("Nota 1"))
+        nota2=Number(prompt("Nota 2"))
+        media= (nota1+nota2)/2
+        if (media>=4 && media<=6.9)
+        {
+                document.write(`Média: ${media} --> aluno está de recuperação!`)
+        }
+        else if (media>6.9)
+        {
+            document.write(`Média: ${media} --> aluno está aprovado!`)
+        }
+        else{
+            document.write(`Média: ${media} --> aluno está reprovado!`)
+        }
+    </script>
+</body>
+</html>

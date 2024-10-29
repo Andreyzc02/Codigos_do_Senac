@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Criar um progama que cadastre e imprima o nome dos aluno que chegaram na aula</p>
+    <h2>Não tenho a quantidade --> while com flag (bandeira)</h2>
+    <script>
+        let nome,maisAlunos="S"
+        let contaAlunos=0
+        while (maisAlunos=="S")
+        {
+            nome=prompt("Digite o nome do aluno")
+            nome=nome.toUpperCase()
+            document.write(nome+"<br>")
+            contaAlunos++
+            // perguntar se tem mais aluno
+            maisAlunos=prompt("Quer cadastrar mais alunos? (S/N)")
+            //dixando maisAlunos em caixa alta
+            maisAlunos=maisAlunos.toUpperCase()
+        }
+        document.write("Total de alunos"+contaAlunos)
+    </script>
+</body>
+</html>
